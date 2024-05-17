@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "\"this include all backend \"",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kamboj7791/backend.git"
+  },
+  "keywords": [
+    "kunal",
+    "backend"
+  ],
+  "author": "kunal kamboj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kamboj7791/backend/issues"
+  },
+  "homepage": "https://github.com/Kamboj7791/backend#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
