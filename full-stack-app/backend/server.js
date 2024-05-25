@@ -17,6 +17,10 @@ const data = [
     id: 4,
     name: "kumar",
   },
+  {
+    id:5,
+    name :"nothing"
+  }
 ];
 app.get("/", (req, res) => {
   res.send("SERVER IS READY");
