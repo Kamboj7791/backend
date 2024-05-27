@@ -5,13 +5,12 @@ import "./App.css";
 import axios from "axios";
 
 function App() {
-  const [data, setData] = useState([]);
+  const [names, setNames] = useState([]);
   useEffect(() => {
-    axios
-      .get("http://localhost:3000/data")
+    axios.get("/api/names")
       .then((response) => {
-        console.log(response);
-        setData(response.data);
+        // console.log(response);
+        setNames(response.data);
       })
       .catch((error) => {
         console.log(error);
@@ -21,8 +20,8 @@ function App() {
   return (
     <>
       <h1>full stack app</h1>
-      <p>{`DATA:${data.length}`}</p>
-      {data.map((item) => {
+      <p>{`DATA:${names.length}`}</p>
+      {names.map((item) => {
         <div key={item.id}>
           <p>{item.name}</p>
         </div>;
