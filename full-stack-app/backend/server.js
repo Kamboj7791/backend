@@ -1,6 +1,6 @@
 import express from "express";
 const app = express();
-const data = [
+const names = [
   {
     id: 1,
     name: "kunal",
@@ -18,15 +18,15 @@ const data = [
     name: "kumar",
   },
   {
-    id:5,
-    name :"nothing"
-  }
+    id: 5,
+    name: "nothing",
+  },
 ];
 app.get("/", (req, res) => {
   res.send("SERVER IS READY");
 });
-app.get("/data", (req, res) => {
-  res.send(data);
+app.get("/api/names", (req, res) => {
+  res.send(names);
 });
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
