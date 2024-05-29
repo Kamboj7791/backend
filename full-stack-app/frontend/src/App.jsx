@@ -9,7 +9,7 @@ function App() {
   useEffect(() => {
     axios.get("/api/names")
       .then((response) => {
-        // console.log(response);
+        console.log(response);
         setNames(response.data);
       })
       .catch((error) => {
