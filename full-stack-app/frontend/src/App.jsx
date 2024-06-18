@@ -21,11 +21,11 @@ function App() {
     <>
       <h1>full stack app</h1>
       <p>{`DATA:${names.length}`}</p>
-      {names.map((item) => {
+      {names.map((item) => (
         <div key={item.id}>
           <p>{item.name}</p>
-        </div>;
-      })}
+        </div>
+      ))}
     </>
   );
 }
